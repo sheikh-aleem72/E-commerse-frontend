@@ -20,7 +20,7 @@ export default function Navbar() {
   function goToAllProduct() {}
   return (
     <>
-      <div className="bg-black backdrop-blur-sm sticky px-2">
+      <div className="bg-black backdrop-blur-sm fixed px-2 w-full z-30">
         <div className="navbar ">
           <div className="navbar-start">
             <div className="dropdown">
@@ -64,7 +64,7 @@ export default function Navbar() {
               </ul>
             </div>
             <a
-              className="sm:text-lg text-[5vw] ml-2 cursor-pointer"
+              className="sm:text-lg text-[5vw] ml-2 cursor-pointer font-extrabold"
               onClick={() => navigate("/")}
             >
               FAKE STORE
