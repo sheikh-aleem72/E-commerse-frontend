@@ -1,9 +1,10 @@
 import "./App.css";
+import Routing from "./components/Routing/Routing";
 
 function App() {
   return (
     <>
-      <div>E-com web frontend</div>
+      <Routing />
     </>
   );
 }
