@@ -20,7 +20,7 @@ export default function Navbar() {
   function goToAllProduct() {}
   return (
     <>
-      <div className="bg-black backdrop-blur-sm fixed px-2 w-full z-30">
+      <div className="bg-black backdrop-blur-sm fixed px-2 w-full z-30 ">
         <div className="navbar ">
           <div className="navbar-start">
             <div className="dropdown">

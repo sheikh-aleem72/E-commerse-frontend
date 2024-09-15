@@ -1,4 +1,3 @@
-import { GiConsoleController } from "react-icons/gi";
 import { axiosInstance } from "../helpers/axiosInstance";
 
 export async function fetchLimitedProduct(limit = 5) {

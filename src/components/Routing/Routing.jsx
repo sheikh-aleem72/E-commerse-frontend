@@ -6,6 +6,7 @@ import CustomErrorBoundary from "../CustomErrorBoundary/CustomErrorBoundary";
 import AllProduct from "../../pages/AllProduct/AllProduct";
 import Collections from "../../pages/Collections/Collections";
 import Cart from "../../pages/Cart/Cart";
+import Product from "../Product/Product";
 
 export default function Routing() {
   return (
@@ -41,6 +42,14 @@ export default function Routing() {
             element={
               <Suspense>
                 <Cart />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/all/:id"
+            element={
+              <Suspense>
+                <Product />
               </Suspense>
             }
           />
