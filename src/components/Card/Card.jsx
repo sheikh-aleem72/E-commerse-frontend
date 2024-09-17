@@ -21,7 +21,7 @@ export default function Card({ name, id, image, price, rating }) {
             <p>{`(${rating.count})`}</p>
           </div>
           <div className="flex justify-between items-center">
-            <p className="font-bold">$ {price}</p>
+            <p className="font-bold">${price}</p>
             <button
               className="bg-[#7735EF] px-4 py-3 rounded-md hover:bg-[#5a3a97c6] h-[35px] flex justify-center items-center"
               onClick={() => console.log("Added to cart")}
