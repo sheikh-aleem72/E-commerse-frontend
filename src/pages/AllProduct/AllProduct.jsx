@@ -18,7 +18,7 @@ export default function AllProduct() {
       <div className=" w-full pt-20">
         {isLoading && <div>Loading...</div>}
 
-        <div className="flex flex-wrap gap-4 p-2 justify-center sm:justify-normal">
+        <div className="flex flex-wrap gap-2 md:gap-4 p-2 justify-center sm:justify-normal ">
           {products &&
             products.map((product) => {
               return (

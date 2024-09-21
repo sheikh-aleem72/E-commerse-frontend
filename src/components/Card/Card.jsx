@@ -8,10 +8,14 @@ export default function Card({ name, id, image, price, rating }) {
   return (
     <>
       <div
-        className="flex w-[200px] h-[350px] flex-col bg-white text-black rounded py-2 cursor-pointer hover:scale-105 transition-all delay-200"
+        className="flex w-[140px] h-[300px] md:w-[200px] md:h-[360px] flex-col bg-white text-black rounded py-2 cursor-pointer hover:scale-105 transition-all delay-200 justify-between"
         onClick={() => navigate(`/all/${id}`)}
       >
-        <img src={image} loading="lazy" className="h-[70%] p-2 rounded" />
+        <img
+          src={image}
+          loading="lazy"
+          className="h-[62%] md:h-[70%]  p-2 rounded"
+        />
         <div className="px-2">
           <h4 className="text-sm line-clamp-2 mb-1">{name}</h4>
           <div className="flex items-center gap-2">
@@ -23,7 +27,7 @@ export default function Card({ name, id, image, price, rating }) {
           <div className="flex justify-between items-center">
             <p className="font-bold">${price}</p>
             <button
-              className="bg-[#7735EF] px-4 py-3 rounded-md hover:bg-[#5a3a97c6] h-[35px] flex justify-center items-center"
+              className="bg-[#7735EF] px-4 py-3 rounded-md hover:bg-[#5a3a97c6] h-[10%] flex justify-center items-center"
               onClick={() => console.log("Added to cart")}
             >
               <LuShoppingBag />

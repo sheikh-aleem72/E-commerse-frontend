@@ -17,7 +17,7 @@ export default function Product() {
   });
   return (
     <>
-      <div className="pt-20 w-full h-screen px-4 flex">
+      <div className="pt-20 w-full h-screen px-4 flex ">
         {isLoading && <div>Loading...</div>}
         {product && (
           <div className="flex md:flex-row flex-col w-full gap-2 py-2">
