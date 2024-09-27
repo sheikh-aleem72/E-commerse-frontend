@@ -36,7 +36,7 @@ export default function Product() {
                 </button>
               </div>
             </div>
-            <div className="h-full md:w-[60%] w-full rounded-md gap-2  bg-white px-4 py-2 flex flex-col text-black overflow-auto">
+            <div className="h-full md:w-[60%] w-full rounded-md gap-2  bg-white px-4 py-2 flex flex-col text-black">
               <h1 className="mt-4 text-xl font-semibold">{product.title}</h1>
               <p>{product.category.toUpperCase()}</p>
               <div className="flex items-center gap-2">
